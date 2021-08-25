@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoey_flutter/screens/task_screen_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,6 +10,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.lightBlueAccent,
+        textTheme: const TextTheme(
+          bodyText1: TextStyle(
+            color: Colors.black45,
+          ),
+        ),
+      ),
+      home: const TasksScreen(),
+      // initialRoute: '/',
+      // routes: {
+      //   "/": (context) => const TasksScreen(),
+      //   },
+    );
   }
 }
