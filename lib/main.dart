@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const TasksScreen(),
+      home: TasksScreen(),
       // initialRoute: '/',
       // routes: {
       //   "/": (context) => const TasksScreen(),
